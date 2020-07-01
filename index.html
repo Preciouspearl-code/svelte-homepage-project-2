@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <title>HOME PAGE PROJECT</title> 
+    <title>Projects-Page</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <area rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         body{
           margin:0px;
-          background:#9B1B30;
+          background: linear-gradient(to bottom, #660066 0%, #ff0066 100%);
+          height: 100%;
+          margin: 0;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
           color:white;
           font-family: 'Roboto', sans-serif;
         }
-        ul{
+        .navbar-nav{
           list-style-type: none;
           text-align: center;
-          padding-bottom:50px;
+          padding-bottom:40px;
         }
-        li{
+        .nav-item{
           display:inline;
           padding-left:2%;
           padding-right: 2%;
         }
-        a{
+        .nav-link{
           text-decoration: none;
           color: white;
-          font-size:20px;
-          padding-right: 2%;
-          padding-left: 3%;
+          font-size:25px;
+          padding-right: 1%;
+          padding-left: 1%;
           padding-bottom: 1%;
           padding-top: 1%;
           transition: 2s;
         }
-        a:hover{
+        .nav-link:hover{
           border-bottom-style: solid;
           border-width: 1px;
-          background-color:white;
-          color: #990000;
+          border-radius:10px;
+          background-color:pink;
         }
-        h1{
-          font-size:40px;
-          font-weight:bold; 
-          text-align:center;
-          color:white; 
-          padding-top:100px; 
-          padding-bottom:0px;
-          margin:opx; 
+        img{
+          max-width:100%;
         }
-        h2{
-          text-align:center;
-        }
-        h3{
-          text-align:center;
-        }
-        .contact_icons{
-          text-align:center;
-        }
-        .social_icons{
-          padding: 2px;
-          font-size: 30px;
-          text-decoration: none;
-          border-radius:5px;
-        }
-      </style>
-    </head>
+    </style>
+  </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#"><i class="fa fa-tasks""></i>Projects</a></li>
-        <li><a href="#"><i class="fa fa-image"></i>Designs</a></li>
-        <li><a href="#">Hire Me🤓</a></li>
+    <nav class="navbar navbar-expand-sm justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Hire Me🤓</a>
+        </li>
       </ul>
     </nav>
-    <h1>I'm Precious Pearls</h1>
-    <h2>Front end Developer</h>
-    <h3 class="focus">HTML |CSS |Javascript</h3>
-    <footer class="contact_icons">
-      <div>
-      <a class="social_icons href="#"><i class="fa fa-twitter"></i></a>
-      <a class="social_icons href="#"><i class="fa fa-dribbble"></i></a>
-      <a class="social_icons href="#"><i class="fa fa-github"></i></a>
-      </div>
-    </footer>
-  </body>
+
+    <div class="card-deck">
+  <div class="card" style="background:black;">
+    <div class="card-body text-center">
+      <img src="https://res.cloudinary.com/precious-pearls/image/upload/v1593608715/icons/rockrt_icon_ekmcxs.png"/>
+      <p class="card-text">Project One</p>
+    </div>
+  </div>
+  <div class="card" style="background:black;">
+    <div class="card-body text-center">
+      <img src="https://res.cloudinary.com/precious-pearls/image/upload/v1593608683/icons/houzhold_icon_bi7m67.png"/>
+      <p class="card-text">Project Two</p>
+    </div>
+  </div>
+  <div class="card" style="background:black;">
+    <div class="card-body text-center">
+      <img src="https://res.cloudinary.com/precious-pearls/image/upload/v1593608745/icons/Paperlyft_icon_ec56ye.png"/>
+      <p class="card-text">Project Three</p>
+    </div>
+  </div>
 </html>
